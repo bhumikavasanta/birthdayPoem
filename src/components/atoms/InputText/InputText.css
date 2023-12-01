@@ -1,0 +1,103 @@
+.unitTextWrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.image-logo {
+    position: absolute;
+    right: 10px;
+}
+
+/* .parent_cotnainer:hover > .child_container_unit_field {
+    border-right: 2px solid #616E84;
+}
+.parent_cotnainer:focus-within > .child_container_unit_field {
+    border-right: 2px solid #3C4C68;
+} */
+
+.errorField {
+    background-color: #F1F3F4;
+    /* border-right: 2px solid #DE350B; */
+}
+
+.parent_cotnainer:hover > .errorField {
+    background-color: #F1F3F4;
+    /* border-right: 2px solid #DE350B; */
+}
+.parent_cotnainer:focus-within > .errorField {
+    background-color: #F1F3F4;
+    /* border-right: 2px solid #DE350B; */
+}
+
+.parent_cotnainer:hover > .disabledField {
+    border-right: 2px solid #D4D5D8;
+}
+
+
+/* Required fields */
+::placeholder {
+    color: #AEB3BC;
+}
+
+/* Chrome <=56, Safari < 10 */
+:-moz-placeholder {
+    color: #AEB3BC;
+}
+
+/* FF 4-18 */
+::-moz-placeholder {
+    color: #AEB3BC;
+}
+
+/* FF 19-51 */
+:-ms-input-placeholder {
+    color: #AEB3BC;
+}
+
+/* Modern Browsers */
+
+*:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+/* Chrome <=56, Safari < 10 */
+*:focus:-moz-placeholder {
+    opacity: 0;
+}
+
+/* FF 4-18 */
+*:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+/* FF 19-50 */
+*:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+/* IE 10+ */
+*:focus::placeholder {
+    opacity: 0;
+}
+
+/* for Autofill */
+input:-webkit-autofill {
+    box-shadow: 0 0 0 50px white inset;
+    -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #333;
+}
+
+input:-webkit-autofill:focus {
+    box-shadow: 0 0 0 50px white inset;
+    -webkit-box-shadow: 0 0 0 50px white inset;/*your box-shadow*/
+    -webkit-text-fill-color: #333;
+}
+
+input::placeholder{
+    font-family: "gothambook", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+  
