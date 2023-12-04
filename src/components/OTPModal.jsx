@@ -29,7 +29,7 @@ function OTPModal({ isOpen, onClose }) {
         inputRef.current.removeEventListener('input', handleInput(index));
       };
     });
-  }, []);
+  });
 
   const handleInput1Change = (event) => {
     setOTP1(event.target.value);
@@ -46,7 +46,7 @@ function OTPModal({ isOpen, onClose }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if(otp1==1&&otp2==2&&otp3==3&&otp4==4) {
+    if(otp1==="1"&&otp2==="2"&&otp3==="3"&&otp4==="4") {
         navigate('./about');
     }
   };

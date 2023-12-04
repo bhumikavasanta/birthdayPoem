@@ -2,7 +2,7 @@ import React from 'react';
 import CadburyLogo from '../UI Images/Cadbury Logo.png';
 import BirthdaySongLogo from '../UI Images/2d logo.png';
 import Hamburger from '../UI Images/Hamburger.png';
-import { Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 
 const Download = () => {
   return (

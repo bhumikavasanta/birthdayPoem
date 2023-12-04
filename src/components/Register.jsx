@@ -17,7 +17,6 @@ const { setSharedData } = useData();
   const [receiveAlerts, setReceiveAlerts] = useState(false);
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const phoneRegex = /^\d{10}$/;
-  const regex = /^[a-zA-Z\s-]+$/;
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -29,19 +28,16 @@ const { setSharedData } = useData();
     setSharedData({ example: newName });
     setName(newName);
 
-    const isNameValid = regex.test(newName);
   };
   const handlePhoneNumber = (event) => {
     const newPhone = event.target.value;
     setPhoneNumber(newPhone);
 
-    const isPhoneNumberValid = phoneRegex.test(newPhone);
   };
   const handleEmailId = (event) => {
     const newEmail = event.target.value;
     setEmailId(newEmail);
 
-    const isEmailIdValid = emailRegex.test(newEmail);
   };
   const handleChangeAcceptTerms = () => {
     setAcceptTerm(true);
