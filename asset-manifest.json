@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/birthdayPoem/static/css/main.fea9fc06.css",
-    "main.js": "/birthdayPoem/static/js/main.18c41b15.js",
+    "main.css": "/birthdayPoem/static/css/main.9eeb2711.css",
+    "main.js": "/birthdayPoem/static/js/main.9b9e0b1f.js",
     "static/js/787.dd9f6e8b.chunk.js": "/birthdayPoem/static/js/787.dd9f6e8b.chunk.js",
     "static/media/BG.jpg": "/birthdayPoem/static/media/BG.b8a797165a852306c3f4.jpg",
     "static/media/Celebrations(Bg).png": "/birthdayPoem/static/media/Celebrations(Bg).e4403968ea75201707f7.png",
@@ -27,12 +27,12 @@
     "static/media/Romantic.png": "/birthdayPoem/static/media/Romantic.5f2bd469514cb91f15df.png",
     "static/media/Pop.png": "/birthdayPoem/static/media/Pop.dc069f328c325a9d35cb.png",
     "index.html": "/birthdayPoem/index.html",
-    "main.fea9fc06.css.map": "/birthdayPoem/static/css/main.fea9fc06.css.map",
-    "main.18c41b15.js.map": "/birthdayPoem/static/js/main.18c41b15.js.map",
+    "main.9eeb2711.css.map": "/birthdayPoem/static/css/main.9eeb2711.css.map",
+    "main.9b9e0b1f.js.map": "/birthdayPoem/static/js/main.9b9e0b1f.js.map",
     "787.dd9f6e8b.chunk.js.map": "/birthdayPoem/static/js/787.dd9f6e8b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fea9fc06.css",
-    "static/js/main.18c41b15.js"
+    "static/css/main.9eeb2711.css",
+    "static/js/main.9b9e0b1f.js"
   ]
 }
