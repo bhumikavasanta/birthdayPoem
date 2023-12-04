@@ -3,12 +3,10 @@ import '../App.css';
 import ProgressBar from '../UI Images/progress bar1.png';
 import CapAndGift from '../UI Images/Cap_Gift.png';
 import Header from './Header';
-import { useData } from '../DataProvider';
 import { useNavigate } from 'react-router-dom';
 
 const About = () => {
   const navigate = useNavigate();
-  const { sharedData } = useData();
   const name = localStorage.getItem('name');
   const [age, setAge] = useState();
   const [selectedGender, setSelectedGender] = useState('');

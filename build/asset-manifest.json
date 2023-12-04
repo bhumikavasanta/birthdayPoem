@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/birthdayPoem/static/css/main.fea9fc06.css",
+    "main.js": "/birthdayPoem/static/js/main.18c41b15.js",
+    "static/js/787.dd9f6e8b.chunk.js": "/birthdayPoem/static/js/787.dd9f6e8b.chunk.js",
+    "static/media/BG.jpg": "/birthdayPoem/static/media/BG.b8a797165a852306c3f4.jpg",
+    "static/media/Celebrations(Bg).png": "/birthdayPoem/static/media/Celebrations(Bg).e4403968ea75201707f7.png",
+    "static/media/Celebrations(Bg) - hashtag.png": "/birthdayPoem/static/media/Celebrations(Bg) - hashtag.28cfb9bd6af27cad6b81.png",
+    "static/media/Gibson-Italic.ttf": "/birthdayPoem/static/media/Gibson-Italic.a1583f6cd2008e6071ff.ttf",
+    "static/media/Headphone.png": "/birthdayPoem/static/media/Headphone.82d8fc13929342da6d73.png",
+    "static/media/Gibson-SemiBold.ttf": "/birthdayPoem/static/media/Gibson-SemiBold.ce999240875def201c9d.ttf",
+    "static/media/Gibson.ttf": "/birthdayPoem/static/media/Gibson.698f6efb69df1b2a5eca.ttf",
+    "static/media/Message.png": "/birthdayPoem/static/media/Message.ee2f81bfcc429bc059eb.png",
+    "static/media/Gibson-Bold.ttf": "/birthdayPoem/static/media/Gibson-Bold.9bcb57722e5d934618d7.ttf",
+    "static/media/Gibson-Light.ttf": "/birthdayPoem/static/media/Gibson-Light.951603b4bb1681a1e47b.ttf",
+    "static/media/Cap_Gift.png": "/birthdayPoem/static/media/Cap_Gift.1af99e9352a85886414f.png",
+    "static/media/Gibson-Regular.ttf": "/birthdayPoem/static/media/Gibson-Regular.b6d02aea7dd75029f4fb.ttf",
+    "static/media/DairyMilkFont-Medium.otf": "/birthdayPoem/static/media/DairyMilkFont-Medium.085bb8458334c1e76b09.otf",
+    "static/media/Desi.png": "/birthdayPoem/static/media/Desi.662e4170bdb12dcefda8.png",
+    "static/media/2d logo.png": "/birthdayPoem/static/media/2d logo.a905322f555357343def.png",
+    "static/media/Rap.png": "/birthdayPoem/static/media/Rap.99e951de4f10ca19a870.png",
+    "static/media/EDM.png": "/birthdayPoem/static/media/EDM.7f5d90f8cf568be2e4f5.png",
+    "static/media/Female.png": "/birthdayPoem/static/media/Female.e9dfc1166cc54460d3b9.png",
+    "static/media/Male.png": "/birthdayPoem/static/media/Male.9560f7bd9bf638b997a5.png",
+    "static/media/Rock.png": "/birthdayPoem/static/media/Rock.d4af59c5ef50d784cb4f.png",
+    "static/media/Funny.png": "/birthdayPoem/static/media/Funny.716668458467d6de9ede.png",
+    "static/media/Romantic.png": "/birthdayPoem/static/media/Romantic.5f2bd469514cb91f15df.png",
+    "static/media/Pop.png": "/birthdayPoem/static/media/Pop.dc069f328c325a9d35cb.png",
+    "index.html": "/birthdayPoem/index.html",
+    "main.fea9fc06.css.map": "/birthdayPoem/static/css/main.fea9fc06.css.map",
+    "main.18c41b15.js.map": "/birthdayPoem/static/js/main.18c41b15.js.map",
+    "787.dd9f6e8b.chunk.js.map": "/birthdayPoem/static/js/787.dd9f6e8b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fea9fc06.css",
+    "static/js/main.18c41b15.js"
+  ]
+}
