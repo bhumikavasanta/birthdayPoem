@@ -235,6 +235,12 @@
   border-radius: 5px;
   height: 22px;
   color: white;
+  text-align: center;
+}
+input.form-input[type=number]::-webkit-inner-spin-button,
+input.form-input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .resend {
   font-family: 'GibsonSemiBold', sans-serif;
@@ -334,6 +340,9 @@
 .mood-icon {
   width: 70%;
 }
+.mood-icon-guitar {
+  width: 35%;
+}
 .icon-text {
   font-family: 'GibsonSemiBold', sans-serif;
   font-size: xx-small;
@@ -413,3 +422,67 @@
   margin-top: 20px;
   cursor: pointer;
 }
+.lyrics-div {
+  position: relative;
+    font-family: 'GibsonSemiBold', sans-serif;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    top: 7%;
+}
+.lyrics {
+  margin: 20px 10px 0px 10px;
+  background-color: white;
+  height: 390px;
+  border-radius: 25px;
+  font-family: 'Gibson', sans-serif;
+  color: #8456c5;
+  padding: 10px;
+  text-align: left;
+}
+.lyrics-text {
+  overflow: auto;
+  height: 370px;
+  padding: 10px;
+}
+div::-webkit-scrollbar {
+  width: 12px;
+}
+
+div::-webkit-scrollbar-track {
+  background: white;
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: #DAA520;
+  border-radius: 6px;
+  border: 3px solid #f1f1f1;
+}
+.loading-text {
+  position: absolute;
+    font-family: 'GibsonSemiBold', sans-serif;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    top: 60px;
+    width: 94%;
+}
+.loading-text2 {
+  position: absolute;
+    font-family: 'GibsonSemiBold', sans-serif;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    top: 80px;
+    width: 94%;
+    font-size: small;
+}
+.guitar-img {
+    z-index: 1;
+    position: absolute;
+    left: 30%;
+    top: 150px;
+    width: 70%;
+}
+
+

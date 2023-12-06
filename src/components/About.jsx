@@ -8,8 +8,8 @@ import { useNavigate } from 'react-router-dom';
 const About = () => {
   const navigate = useNavigate();
   const name = localStorage.getItem('name');
-  const [age, setAge] = useState();
-  const [selectedGender, setSelectedGender] = useState('');
+  const [age, setAge] = useState("");
+  const [selectedGender, setSelectedGender] = useState("male");
   const handleAge = (event) => {
     const newAge = event.target.value;
     setAge(newAge);
@@ -18,7 +18,12 @@ const About = () => {
     setSelectedGender(event.target.value);
   };
   const handleProceed = () => {
-    navigate('./vibe');
+    if(age!=="") {
+      navigate('./vibe');
+    }
+    if(age==="") {
+    alert("Enter age!");
+    }
   };
   return (
     <div className='register-page'>
@@ -54,7 +59,6 @@ const About = () => {
         Gender
       </div>
       <select id="gender" value={selectedGender} onChange={handleGenderChange} className='gender-value'>
-        <option value="">Select</option>
         <option value="male">Male</option>
         <option value="female">Female</option>
         <option value="other">Other</option>

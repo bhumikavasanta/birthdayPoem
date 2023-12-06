@@ -39,16 +39,11 @@
 
 .container {
   background-image: url('./UI\ Images/BG.jpg');
-  /* Specify additional background properties for better control */
-  background-size: cover; /* Cover the entire container */
-  background-position: center; /* Center the image */
-  /* You can also include other background properties like repeat, etc. */
-  /* width: 40%; Set the width of the container */
-  height: 618px; /* Set the height as needed */
-  /* display: flex; */
-  align-items: center; /* Vertically center items */
-  justify-content: center; /* Horizontally center items */
-  /* margin: 0 auto; Center the container */
+  background-size: cover;
+  background-position: center; 
+  height: 618px;
+  align-items: center;
+  justify-content: center; 
 }
 
 /* @media (max-width: 320px) {

@@ -16,6 +16,7 @@ import EDM from '../UI Images/Icons/EDM.png';
 import Male from '../UI Images/Icons/Male.png';
 import Female from '../UI Images/Icons/Female.png';
 import { useNavigate } from 'react-router-dom';
+import { Grid } from '@mui/material';
 
 const Vibe = () => {
 
@@ -31,6 +32,15 @@ const Vibe = () => {
     }
     if(mood!=="" && genre!=="" && voice!=="") {
       navigate('./questions');
+    }
+    if(mood==="") {
+      alert('Select Mood');
+    }
+    if(genre==="") {
+      alert('Select Genre');
+    }
+    if(!frame1 && voice==="") {
+      alert('Select Voice');
     }
   };
   return (
@@ -94,48 +104,48 @@ const Vibe = () => {
         <div className='mood'>
           Genre
         </div>
-        <div className='mood-icons'>
-          <div className='margin-div'>
+        <Grid container className='mood-icons' gap={1}>
+          <Grid item xs={2} className='margin-div'>
           <div className={genre === "rap" ? 'mood-container-click' : 'mood-container'}>
             <img className='mood-icon' src={Rap} alt="Rap" onClick={()=>setGenre("rap")}/>
           </div>
           <div className='icon-text'>
             Rap
           </div>
-          </div>
-          <div className='margin-div'>
+          </Grid>
+          <Grid item xs={2} className='margin-div'>
           <div className={genre === "rock" ? 'mood-container-click' : 'mood-container'}>
             <img className='mood-icon' src={Rock} alt="Rock" onClick={()=>setGenre("rock")}/>
           </div>
           <div className='icon-text'>
             Rock
           </div>
-          </div>
-          <div className='margin-div'>
+          </Grid>
+          <Grid item xs={2} className='margin-div'>
           <div className={genre === "pop" ? 'mood-container-click' : 'mood-container'}>
-            <img className='mood-icon' src={Pop} alt="Pop" onClick={()=>setGenre("pop")}/>
+            <img className='mood-icon-guitar' src={Pop} alt="Pop" onClick={()=>setGenre("pop")}/>
           </div>
           <div className='icon-text'>
             Pop
           </div>
-          </div>
-          <div className='margin-div'>
+          </Grid>
+          <Grid item xs={2} className='margin-div'>
           <div className={genre === "desi" ? 'mood-container-click' : 'mood-container'}>
             <img className='mood-icon' src={Desi} alt="Desi" onClick={()=>setGenre("desi")}/>
           </div>
           <div className='icon-text'>
             Desi
           </div>
-          </div>
-          <div className='margin-div'>
+          </Grid>
+          <Grid item xs={2} className='margin-div'>
           <div className={genre === "edm" ? 'mood-container-click' : 'mood-container'}>
             <img className='mood-icon' src={EDM} alt="EDM" onClick={()=>setGenre("edm")}/>
           </div>
           <div className='icon-text'>
             EDM
           </div>
-          </div>
-        </div>
+          </Grid>
+        </Grid>
         {
           !frame1 && (<>
 <div className='mood'>

@@ -6,6 +6,8 @@ import Vibe from './components/Vibe';
 import './App.css';
 import { DataProvider } from './DataProvider';
 import Questions from './components/Questions';
+import Lyrics from './components/Lyrics';
+import Song from './components/Song';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
               <Route path="/register/about" element={<About />} />
               <Route path="/register/about/vibe" element={<Vibe />} />
               <Route path="/register/about/vibe/questions" element={<Questions />} />
+              <Route path="/register/about/vibe/questions/lyrics" element={<Lyrics />} />
+              <Route path="/register/about/vibe/questions/lyrics/song" element={<Song />} />
             </Routes>
           </DataProvider>
         </BrowserRouter>

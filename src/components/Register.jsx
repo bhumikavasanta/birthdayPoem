@@ -4,11 +4,9 @@ import ProgressBar from '../UI Images/progress bar.png';
 import CelebrationsLogo from '../UI Images/Celebrations(Bg).png';
 import Header from './Header';
 import OTPModal from './OTPModal';
-import { useData } from '../DataProvider';
 
 
 const Register = () => {
-const { setSharedData } = useData();
   
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState();
@@ -17,6 +15,7 @@ const { setSharedData } = useData();
   const [receiveAlerts, setReceiveAlerts] = useState(false);
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const phoneRegex = /^\d{10}$/;
+  const regex = /^[a-zA-Z\s-]+$/;
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -25,7 +24,7 @@ const { setSharedData } = useData();
 
   const handleName = (event) => {
     const newName = event.target.value;
-    setSharedData({ example: newName });
+    // setSharedData({ example: newName });
     setName(newName);
 
   };
@@ -46,8 +45,20 @@ const { setSharedData } = useData();
     setReceiveAlerts(true);
   }
   const handleSubmit = () => {
-    if (emailRegex.test(emailId) && phoneRegex.test(phoneNumber) && emailRegex.test(emailId) && acceptTerms) {
+    if (emailRegex.test(emailId) && phoneRegex.test(phoneNumber) && regex.test(name) && acceptTerms) {
       setIsOpen(true);
+    }
+    if(!(regex.test(name))) {
+      alert('Invalid Name!');
+    }
+    if (!(phoneRegex.test(phoneNumber))) {
+      alert('Invalid Phone Number!');
+    }
+    if (!(emailRegex.test(emailId))) {
+      alert('Invalid Email!');
+    }
+    if(!acceptTerms) {
+      alert('Cannot proceed without accepting terms and conditions.')
     }
   };
   return (

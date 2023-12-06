@@ -6,6 +6,7 @@ import Header from './Header';
 import { useNavigate } from 'react-router-dom';
 
 const Questions = () => {
+  // const apiKey = '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';
   const navigate = useNavigate();
   const [petName, setPetName] = useState("");
   const [angry, setAngry] = useState();
@@ -14,6 +15,37 @@ const Questions = () => {
   const [movie, setMovie] = useState('');
   const [sport, setSport] = useState('');
   const [frame1, setFrame1] = useState(true);
+
+  // const handleSubmit = async () => {
+  //   const promptText = 'Once upon a time'; // Your prompt text here
+  //   try {
+  //     const requestBody = {
+  //       prompt: promptText,
+  //       max_tokens: 100, // Adjust max_tokens as per your preference
+  //     };
+
+  //     const response = await fetch('https://api.openai.com/v1/engines/davinci/completions', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //         Authorization: `Bearer ${apiKey}`,
+  //       },
+  //       body: JSON.stringify(requestBody),
+  //     });
+  //     if(response.ok) {
+  //       console.log("Ok");
+  //     } else {
+  //       console.log("Not");
+  //       console.log(response.status);
+  //     }
+
+  //     const data = await response.json();
+  //     // setGeneratedText(data.choices[0].text.trim());
+  //     console.log(data.choices[0].text.trim());
+  //   } catch (error) {
+  //     console.error('Error fetching data:', error);
+  //   }
+  // };
 
   const handlePetName = (event) => {
     const newName = event.target.value;
@@ -47,6 +79,9 @@ const Questions = () => {
   const handleProceed = () => {
     if(petName!=="" && angry!=="" && funny!==""){
       navigate('./lyrics');
+    }
+    if(petName==="" || angry==="" || funny==="") {
+      alert('Answer all questions!');
     }
   };
   return (
@@ -96,6 +131,7 @@ const Questions = () => {
           <button className='answer-button' onClick={handleAnswer}>
             Answer More
           </button>
+          {/* <button className='proceed-button' onClick={handleProceed}> */}
           <button className='proceed-button' onClick={handleProceed}>
             Proceed
           </button>

@@ -32,15 +32,31 @@ function OTPModal({ isOpen, onClose }) {
   });
 
   const handleInput1Change = (event) => {
+    const inputValue = event.target.value;
+    if (inputValue.length > 1) {
+      event.target.value = inputValue.slice(0, 1); // Only keep the first digit
+    }
     setOTP1(event.target.value);
   };
   const handleInput2Change = (event) => {
+    const inputValue = event.target.value;
+    if (inputValue.length > 1) {
+      event.target.value = inputValue.slice(0, 1); // Only keep the first digit
+    }
     setOTP2(event.target.value);
   };
   const handleInput3Change = (event) => {
+    const inputValue = event.target.value;
+    if (inputValue.length > 1) {
+      event.target.value = inputValue.slice(0, 1); // Only keep the first digit
+    }
     setOTP3(event.target.value);
   };
   const handleInput4Change = (event) => {
+    const inputValue = event.target.value;
+    if (inputValue.length > 1) {
+      event.target.value = inputValue.slice(0, 1); // Only keep the first digit
+    }
     setOTP4(event.target.value);
   };
 
@@ -63,15 +79,16 @@ function OTPModal({ isOpen, onClose }) {
           <input
             className='form-input'
             ref={inputRefs[0]}
-            type="text"
+            type="number"
             value={otp1}
             onChange={handleInput1Change}
             required
+            maxLength="1"
           />
           <input
             className='form-input'
             ref={inputRefs[1]}
-            type="text"
+            type="number"
             value={otp2}
             onChange={handleInput2Change}
             required
@@ -79,14 +96,14 @@ function OTPModal({ isOpen, onClose }) {
           <input
             className='form-input'
             ref={inputRefs[2]}
-            type="text"
+            type="number"
             value={otp3}
             onChange={handleInput3Change}
             required
           />
           <input
             className='form-input'
-            type="text"
+            type="number"
             ref={inputRefs[3]}
             value={otp4}
             onChange={handleInput4Change}
