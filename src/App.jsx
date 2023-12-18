@@ -4,7 +4,6 @@ import Register from './components/Register';
 import About from './components/About';
 import Vibe from './components/Vibe';
 import './App.css';
-import { DataProvider } from './DataProvider';
 import Questions from './components/Questions';
 import Lyrics from './components/Lyrics';
 import Song from './components/Song';
@@ -14,7 +13,6 @@ function App() {
     <div className='main-container'>
       <div className='container'>
         <BrowserRouter>
-          <DataProvider>
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="/register" element={<Register />} />
@@ -24,7 +22,6 @@ function App() {
               <Route path="/register/about/vibe/questions/lyrics" element={<Lyrics />} />
               <Route path="/register/about/vibe/questions/lyrics/song" element={<Song />} />
             </Routes>
-          </DataProvider>
         </BrowserRouter>
       </div>
     </div>
